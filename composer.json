@@ -2,7 +2,7 @@
     "name": "sarahh1417/php-mvc-core",
     "autoload": {
         "psr-4": {
-            "sarahh1417\\phpmvc" : "."
+            "sarahh1417\\phpmvc\\": "src/"
         }
     },
     "authors": [
