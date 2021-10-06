@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core;
+namespace sarahh1417\phpmvc;
 
 class View
 {

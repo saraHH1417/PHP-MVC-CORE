@@ -1,7 +1,7 @@
 <?php
 
-namespace app\core\Form;
-use app\core\Model;
+namespace sarahh1417\phpmvc\Form;
+use sarahh1417\phpmvc\Model;
 class InputField extends BaseField
 {
     public const TYPE_TEXT = 'text';

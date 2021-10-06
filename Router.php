@@ -1,8 +1,8 @@
 <?php
 
-namespace app\core;
+namespace sarahh1417\phpmvc;
 
-use app\core\exception\NotFoundException;
+use sarahh1417\phpmvc\exception\NotFoundException;
 use http\Params;
 
 class Router
@@ -14,7 +14,7 @@ class Router
     /**
      * @param Request $request
      */
-    public function __construct(\app\core\Request $request , Response $response)
+    public function __construct(\sarahh1417\phpmvc\Request $request , Response $response)
         // we can both put the name space or remove it in the cunstroctor parentheses because namespaces are the same here
     {
         $this->request = $request;
@@ -51,7 +51,7 @@ class Router
             return Application::$app->view->renderView($callback);
         }
         if(is_array($callback)) {
-            /** @var \app\core\Controller $controller */
+            /** @var \sarahh1417\phpmvc\Controller $controller */
             $controller = new $callback[0]();
             Application::$app->controller = $controller;
             $controller->action = $callback[1];

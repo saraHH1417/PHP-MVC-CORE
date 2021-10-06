@@ -1,6 +1,6 @@
 <?php
 
-namespace app\core\exception;
+namespace sarahh1417\phpmvc\exception;
 
 
 class ForbiddenException extends \Exception
